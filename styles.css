@@ -8,13 +8,16 @@
 
 body {
     line-height: 1.5;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 3fr;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 5fr;
 }
 
 .sidebar {
@@ -22,4 +25,10 @@ p, h1, h2, h3, h4, h5, h6 {
     background-color: rgb(59, 145, 243);
     color: white;
     grid-row: 1 / 4;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
