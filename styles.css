@@ -27,8 +27,14 @@ p, h1, h2, h3, h4, h5, h6 {
     grid-row: 1 / 4;
 }
 
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
 .main-content {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr 1fr;
 }
