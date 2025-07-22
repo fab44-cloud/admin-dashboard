@@ -16,8 +16,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 1fr 4fr;
 }
 
 .sidebar {
@@ -41,10 +40,25 @@ p, h1, h2, h3, h4, h5, h6 {
 
 button {
     width: 15%;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    padding: 0.5rem;
 }
 
 .main-content {
     display: grid;
-    grid-template-columns: 4fr 2fr;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     background-color: lightgray;
+}
+
+.projects .card {
+    height: 200px;
+    border: 1px solid greenyellow;
+}
+
+.socials-container {
+    border: 1px solid brown;
+}
+
+.social-card {
+    border: 1px solid white;
 }
