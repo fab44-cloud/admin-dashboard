@@ -1,3 +1,9 @@
+:root {
+    --sidebar-blue: #1892d3;
+    --light-grey: #e1e8f0;
+    --yellow-orange: #efb429;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -21,7 +27,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .sidebar {
-    background-color: rgb(59, 145, 243);
+    background-color: var(--sidebar-blue);
     color: white;
     grid-row: 1 / 4;
 }
@@ -66,7 +72,7 @@ button {
 .main-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    background-color: lightgray;
+    background-color: var(--light-grey);
 }
 
 .projects .card {
