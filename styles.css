@@ -17,10 +17,10 @@ p, h1, h2, h3, h4, h5, h6 {
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
+    height: 100vh;
 }
 
 .sidebar {
-    display: grid;
     background-color: rgb(59, 145, 243);
     color: white;
     grid-row: 1 / 4;
@@ -28,8 +28,21 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .sidebar svg {
     fill: white;
-    width: 25%;
-    min-height: 25%;
+    width: 40px;
+    min-height: 40px;
+}
+
+.sidebar-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.list-item-container li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    list-style: none;
 }
 
 .header {
