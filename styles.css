@@ -1,6 +1,6 @@
 :root {
     --sidebar-blue: #1892d3;
-    --main-background: #e1e8f0;
+    --main-bg-clr: #e1e8f0;
     --card-accent: #efb429;
 }
 
@@ -27,10 +27,6 @@ p, h1, h2, h3, h4, h5, h6 {
     height: 100vh;
 }
 
-svg, img {
-    width: 1.2rem;
-}
-
 .sidebar {
     background-color: var(--sidebar-blue);
     color: white;
@@ -41,7 +37,7 @@ svg, img {
 .sidebar-dashboard {
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     padding-left: 1rem;
     padding-top: 1rem;
     font-size: 0.8rem;
@@ -49,8 +45,9 @@ svg, img {
     margin-bottom: 1rem;
 }
 
-.sidebar svg {
+.sidebar-dashboard > svg {
     fill: white;
+    width: 3rem;
 }
 
 ul {
@@ -79,7 +76,6 @@ ul {
 }
 
 /* Header Section */
-
 .header {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
@@ -87,26 +83,52 @@ ul {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.header-row1 {
+.search-section,
+.profile-section {
     display: flex;
+    /* justify-content: space-between;
+    align-items: center; */
 }
 
-.header-row2 {
-    grid-row: 2 / 3;
+.search-container {
     display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    gap: 1rem;
 }
 
-/* .search-bar {
+.search-container > svg {
+    width: 1rem;
+}
+
+.search-container > form > input {
+    background-color: var(--main-bg-clr);
+    border: 2px var(--main-bg-clr);
     width: 100%;
-} */
+    padding: 1rem;
+    border-radius: 40px;
+}
+
+.notification-container {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 1rem;
+}
 
 .bell-icon {
-    width: 2%;
+    width: 1rem;
 }
 
 .dog-icon {
     width: 4%;
     fill: var(--sidebar-blue);
+}
+
+.username-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 button {
@@ -120,7 +142,7 @@ button {
 .main-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    background-color: var(--main-background);
+    background-color: var(--main-bg-clr);
 }
 
 .projects .card {
