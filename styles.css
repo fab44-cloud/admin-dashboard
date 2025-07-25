@@ -66,9 +66,14 @@ ul {
     justify-content: flex-start;
     list-style: none;
     gap: 1rem;
-    padding-left: 1rem;
+    padding-left: 1.5rem;
     padding-top: 1.2rem;
     font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.list-group-b {
+    margin-top: 1.5rem;
 }
 
 .header {
