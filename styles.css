@@ -177,12 +177,12 @@ button {
 }
 
 /* Main Section */
-.main-content {
+.projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     background-color: var(--main-bg-clr);
-    grid-row: 2 / 3;
-    grid-column: 2 / 3;
+    /* grid-row: 2 / 3;
+    grid-column: 2 / 3; */
 }
 
 .projects .card {
@@ -190,10 +190,10 @@ button {
     border: 1px solid var(--card-accent);
 }
 
-.socials-container {
+.announcements {
     border: 1px solid brown;
 }
 
-.social-card {
+.social-cards {
     border: 1px solid white;
 }
