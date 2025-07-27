@@ -2,6 +2,7 @@
     --sidebar-clr: #1892d3;
     --main-bg-clr: #e1e8f0;
     --card-accent-clr: #efb429;
+    --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 *, *::before, *::after {
@@ -14,6 +15,7 @@
 
 body {
     line-height: 1.5;
+    font-family: var(--system-ui);
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -224,7 +226,7 @@ button {
 }
 
 .projects .card {
-    min-height: 12rem;
+    min-height: 12.5rem;
     border: 1px solid white;
     width: 100%;
     background-color: white;
