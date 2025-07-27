@@ -186,7 +186,8 @@ button {
 
 .projects {
     display: grid;
-    grid-template-columns: 1fr 1fr 0.8fr;
+    /* grid-template-columns: 1fr 1fr 0.8fr; */
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     background-color: var(--main-bg-clr);
     /* grid-row: 2 / 3;
     grid-column: 2 / 3; */
@@ -204,7 +205,11 @@ button {
     margin-left: 1rem;
     /* margin-top: 1.5rem; */
     justify-content: center;
-    margin-bottom: 2.6rem;
+    margin-bottom: 2.8rem;
+}
+
+.col1 h3 {
+    font-size: 1.3rem;
 }
 
 .col2 {
@@ -236,6 +241,17 @@ button {
 
 .card .card-text{
     color: #676463;
+}
+
+.card svg {
+    width: 5%;
+    min-width: 1rem;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
 }
 
 /* .card p {
