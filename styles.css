@@ -190,34 +190,63 @@ button {
     background-color: var(--main-bg-clr);
     /* grid-row: 2 / 3;
     grid-column: 2 / 3; */
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .col1 {
     grid-row: 1 / 2;
-    display: grid;
-    align-content: center;
+    grid-column: 1 / 2;
+    /* display: grid; */
+    /* align-content: center; */
+    display: flex;
+    flex-direction: column;
     gap: 1rem;
     margin-left: 1rem;
+    /* margin-top: 1.5rem; */
+    justify-content: center;
+    margin-bottom: 2.6rem;
 }
 
 .col2 {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
-    display: grid;
+    /* display: grid; */
+    display: flex;
+    flex-direction: column;
     gap: 1rem;
-    margin-top: 3rem;
+    /* margin-top: 4.2rem; */
+    justify-content: center;
 }
 
 .projects .card {
-    height: 170px;
+    min-height: 12rem;
     border: 1px solid white;
+    width: 100%;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    border-left: 8px solid var(--card-accent-clr);
 }
 
-.announcements {
-    border: 1px solid brown;
+.card .title {
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
-.trending-items {
-    border: 1px solid white;
+.card .card-text{
+    color: #676463;
 }
+
+/* .card p {
+    text-align:left;
+} */
+
+.announcements-card {
+    border: 1px solid white;
+    background-color: white;
+}
+
+/* .trending-items {
+    border: 1px solid white;
+} */
